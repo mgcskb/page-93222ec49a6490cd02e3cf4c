@@ -1,0 +1,396 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>微观云 · 订阅套餐、客户端与接入流程说明</title><meta name="description" content="微观云是一份写在页面里的订阅说明：基础版、旗舰版、团队版三档套餐的价格与权益，客户端说明与接入流程，以及按主题分组的常见问题，全部直接列出，便于逐条核对。"><meta name="keywords" content="微观云,订阅套餐,客户端使用说明,流量套餐,团队方案,常见问题"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-6659bc0582.dmywafa.cn/"><meta property="og:type" content="website"><meta property="og:title" content="微观云 · 订阅套餐、客户端与接入流程说明"><meta property="og:description" content="微观云是一份写在页面里的订阅说明：基础版、旗舰版、团队版三档套餐的价格与权益，客户端说明与接入流程，以及按主题分组的常见问题，全部直接列出，便于逐条核对。"><meta property="og:url" content="https://p-6659bc0582.dmywafa.cn/"><meta property="og:site_name" content="微观云"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-6659bc0582.dmywafa.cn/", "name": "微观云 · 订阅套餐、客户端与接入流程说明", "description": "微观云是一份写在页面里的订阅说明：基础版、旗舰版、团队版三档套餐的价格与权益，客户端说明与接入流程，以及按主题分组的常见问题，全部直接列出，便于逐条核对。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="93222ec49a6490cd02e3cf4c:fe19dc5f6fc07a1068995c52a9dc646a83e90a1f67d18a4e844a98d55859dcce:c0ead3ccf242d2cbf86d"></head><body id="top"><style>
+  :root{--wine:#6b1f2b;--wine-deep:#4a141d;--ivory:#f6f1e7;--ivory-soft:#efe7d8;--ink:#2b2320;--ink-soft:#5d5049;--line:#c9b9a3;--accent:#a8342f}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--ivory);color:var(--ink);font-family:"Songti SC","SimSun","Noto Serif SC",Georgia,serif;font-size:16px;line-height:1.75}
+  a{color:var(--wine);text-decoration:none;border-bottom:1px solid rgba(107,31,43,.35)}
+  a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* 首屏 */
+  .hero{background:var(--wine);color:var(--ivory);padding:48px 0 56px;border-bottom:6px solid var(--wine-deep)}
+  .kicker{display:inline-block;font-size:12px;letter-spacing:.28em;text-transform:uppercase;border:1px dashed rgba(246,241,231,.55);padding:4px 12px;margin:0 0 22px;color:var(--ivory-soft)}
+  .hero h1{font-size:clamp(30px,5.2vw,52px);line-height:1.25;margin:0 0 18px;letter-spacing:.02em;font-weight:700}
+  .hero p.lead{margin:0 0 30px;max-width:56ch;color:#f0e4d4;font-size:17px}
+  .dash{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .dash-cell{border:1px dashed rgba(246,241,231,.6);border-radius:0;padding:16px 14px 14px;background:rgba(74,20,29,.42)}
+  .dash-cell .label{display:block;font-size:12px;letter-spacing:.16em;color:#e3d2c1;margin-bottom:8px}
+  .dash-cell .value{display:block;font-size:26px;line-height:1.2;font-weight:700;color:#fff8ec}
+  .dash-cell .note{display:block;font-size:12.5px;color:#d9c3b0;margin-top:6px;line-height:1.5}
+  .hero-links{margin-top:28px;font-size:14.5px;color:#e3d2c1}
+  .hero-links a{color:var(--ivory);border-bottom:1px solid rgba(246,241,231,.5);margin-right:4px}
+  .hero-links span.sep{color:#b98d84;padding:0 8px}
+
+  /* 通用区块 */
+  section{padding:56px 0}
+  section + section{border-top:1px solid var(--line)}
+  h2{font-size:clamp(22px,3.2vw,30px);line-height:1.35;margin:0 0 10px;color:var(--wine-deep);letter-spacing:.01em}
+  h3{font-size:18px;margin:0 0 8px;color:var(--wine)}
+  .section-note{margin:0 0 32px;max-width:64ch;color:var(--ink-soft);font-size:15px}
+
+  /* 票据卡片 */
+  .ticket{border:1px dashed var(--line);background:var(--ivory-soft);padding:20px 20px 18px;margin:0}
+  .ticket .stub{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:10px;margin-bottom:12px;font-size:12.5px;letter-spacing:.14em;color:var(--ink-soft)}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+  /* 流程 */
+  .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step}
+  .steps li{counter-increment:step;border:1px dashed var(--line);background:var(--ivory-soft);padding:18px}
+  .steps li::before{content:"步骤 " counter(step);display:block;font-size:12px;letter-spacing:.16em;color:var(--accent);margin-bottom:8px}
+  .steps li p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+
+  /* 套餐阶梯 */
+  .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+  .rung{border:1px dashed var(--line);background:#fbf7ee;padding:22px 20px 20px;position:relative}
+  .rung-1{margin-top:0}
+  .rung-2{margin-top:26px}
+  .rung-3{margin-top:52px}
+  .rung .tier-no{font-size:12px;letter-spacing:.2em;color:var(--ink-soft)}
+  .rung h3{font-size:21px;margin:6px 0 2px;color:var(--wine-deep)}
+  .rung .price{font-size:26px;font-weight:700;color:var(--accent);line-height:1.3;margin:10px 0 2px}
+  .rung .annual{font-size:13.5px;color:var(--ink-soft);margin:0 0 14px}
+  .rung ul{list-style:none;margin:0;padding:14px 0 0;border-top:1px dashed var(--line);font-size:14.5px}
+  .rung ul li{position:relative;padding-left:16px;margin-bottom:9px;color:#3c322c}
+  .rung ul li::before{content:"·";position:absolute;left:2px;top:-1px;color:var(--accent);font-weight:700}
+  .flag{display:inline-block;font-size:11.5px;letter-spacing:.14em;background:var(--wine);color:var(--ivory);padding:2px 9px;margin-left:8px;vertical-align:middle;border-bottom:0}
+  .ladder-foot{margin-top:30px;font-size:14px;color:var(--ink-soft);border:1px dashed var(--line);padding:14px 18px;background:var(--ivory-soft)}
+  .ladder-foot strong{color:var(--wine-deep)}
+
+  /* 客户端 */
+  .client-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .client-list .ticket p{margin:0 0 10px;font-size:14.5px;color:var(--ink-soft)}
+  .client-list .ticket .meta{font-size:13px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:10px;margin:0}
+  .meta a{color:var(--wine)}
+
+  /* FAQ */
+  .faq-group{margin-bottom:34px}
+  .faq-group:last-child{margin-bottom:0}
+  .faq-group > h3{font-size:15px;letter-spacing:.2em;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:8px;margin:0 0 18px}
+  .qa{border:1px dashed var(--line);background:#fbf7ee;padding:16px 18px;margin-bottom:14px}
+  .qa h4{font-size:16px;margin:0 0 8px;color:var(--wine-deep)}
+  .qa p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+  .qa p + p{margin-top:8px}
+
+  /* 页脚 */
+  footer{background:var(--wine-deep);color:#e8d9c8;padding:40px 0 48px;font-size:14px}
+  footer h2{color:#fbf4e8;font-size:18px;margin:0 0 12px}
+  footer p{margin:0 0 10px;max-width:66ch;color:#dcc9b8}
+  footer .jump{margin:18px 0 0;font-size:14px}
+  footer a{color:#fbf4e8;border-bottom:1px solid rgba(251,244,232,.45)}
+  footer .jump span.sep{color:#b98d84;padding:0 8px}
+
+  /* 清单 */
+  .checklist{list-style:none;margin:0;padding:0;font-size:15px;max-width:70ch}
+  .checklist li{border-bottom:1px dashed var(--line);padding:9px 0 9px 18px;position:relative;color:#3c322c}
+  .checklist li:last-child{border-bottom:0}
+  .checklist li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+
+  @media (max-width:860px){
+    .dash{grid-template-columns:repeat(2,1fr)}
+    .three{grid-template-columns:1fr}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .ladder{grid-template-columns:1fr}
+    .rung-1,.rung-2,.rung-3{margin-top:0}
+    .client-list{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){
+    .hero{padding:36px 0 44px}
+    section{padding:42px 0}
+    .dash{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .dash-cell .value{font-size:23px}
+  }
+</style><main>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">订阅说明 · 逐条列出</p>
+      <h1>微观云：三档套餐、一份客户端说明，先把条件摊开再决定</h1>
+      <p class="lead">
+        这页不绕弯子。价格、每月流量、同时在线设备数、线路类型，全部按档位写清。
+        先看四个数字块，再往下核对套餐、流程和常见问题。
+      </p>
+
+      <div class="dash">
+        <div class="dash-cell">
+          <span class="label">套餐档位</span>
+          <span class="value">3 档</span>
+          <span class="note">基础版 / 旗舰版 / 团队版</span>
+        </div>
+        <div class="dash-cell">
+          <span class="label">入门月付</span>
+          <span class="value">¥15</span>
+          <span class="note">按年付 ¥150 / 年</span>
+        </div>
+        <div class="dash-cell">
+          <span class="label">旗舰年付</span>
+          <span class="value">¥350</span>
+          <span class="note">折合每月约 ¥29.2</span>
+        </div>
+        <div class="dash-cell">
+          <span class="label">团队设备数</span>
+          <span class="value">20 台</span>
+          <span class="note">团队版同时在线上限</span>
+        </div>
+      </div>
+
+      <p class="hero-links">
+        跳到：
+        <a href="#plans">套餐对照</a><span class="sep">/</span><a href="#clients">客户端说明</a><span class="sep">/</span><a href="#flow">接入流程</a><span class="sep">/</span><a href="#faq">常见问题</a>
+      </p>
+    </div>
+  </header>
+
+  <section id="intro">
+    <div class="wrap">
+      <h2>这页适合谁，先对号入座</h2>
+      <p class="section-note">
+        微观云的信息按“你每月用多少、几台设备、是否需要专线”三件事组织。
+        如果你的情况能直接对上下面的某一类，可以跳过叙述，直接看套餐表。
+      </p>
+      <div class="three">
+        <div class="ticket">
+          <div class="stub"><span>情形一</span><span>轻度使用</span></div>
+          <h3>一两台设备，日常浏览</h3>
+          <p>每月流量需求在一百 GB 量级，主要是网页、文档和常规流媒体。基础版的 100GB 与 3 台设备通常够用。</p>
+        </div>
+        <div class="ticket">
+          <div class="stub"><span>情形二</span><span>多设备常在</span></div>
+          <h3>手机、平板、笔电同时用</h3>
+          <p>需要流媒体完整解锁与线路优先级更高时，旗舰版的 300GB、5 台设备与 IPLC 专线游戏加速优化是主要差异点。</p>
+        </div>
+        <div class="ticket">
+          <div class="stub"><span>情形三</span><span>小团队共用</span></div>
+          <h3>多人分摊，需要定制路由</h3>
+          <p>团队版把流量提到 1000GB、设备数放到 20 台，并提供 VIP 专属高带宽节点、企业定制路由与专属客户经理。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="wrap">
+      <h2>套餐对照：三档按阶梯排列，越往下承载力越大</h2>
+      <p class="section-note">
+        下面每一档都标出月付价格、年付价格和权益清单。年付只是支付周期的差别，
+        权益内容与同档月付一致。以下为页面展示的价格，实际开通以你确认的页面为准。
+      </p>
+
+      <div class="ladder">
+        <article class="rung rung-1">
+          <span class="tier-no">第一档</span>
+          <h3>基础版</h3>
+          <p class="price">¥15<span> / 月</span></p>
+          <p class="annual">按年付仅需 ¥150 / 年</p>
+          <ul>
+            <li>每月 100GB 极速流量</li>
+            <li>支持 3 台设备同时在线</li>
+            <li>解锁基础流媒体</li>
+            <li>普通线路节点池</li>
+          </ul>
+        </article>
+
+        <article class="rung rung-2">
+          <span class="tier-no">第二档</span>
+          <h3>旗舰版<span class="flag">推荐</span></h3>
+          <p class="price">¥35<span> / 月</span></p>
+          <p class="annual">按年付仅需 ¥350 / 年</p>
+          <ul>
+            <li>每月 300GB 极速流量</li>
+            <li>支持 5 台设备同时在线</li>
+            <li>全节点原生流媒体解锁</li>
+            <li>IPLC 专线游戏加速优化</li>
+            <li>7x24 优先工单支持</li>
+          </ul>
+        </article>
+
+        <article class="rung rung-3">
+          <span class="tier-no">第三档</span>
+          <h3>团队版</h3>
+          <p class="price">¥85<span> / 月</span></p>
+          <p class="annual">按年付仅需 ¥850 / 年</p>
+          <ul>
+            <li>每月 1000GB 极速流量</li>
+            <li>支持 20 台设备同时在线</li>
+            <li>VIP 专属高带宽节点</li>
+            <li>支持企业定制路由</li>
+            <li>专属客户经理服务</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="ladder-foot">
+        <strong>怎么选：</strong>先看每月流量，再看同时在线设备数，最后看是否需要 IPLC 专线与定制路由。
+        三项里有两项落进同一档，就按那一档看；年付与否只影响结算周期，不改变权益内容。
+      </p>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="wrap">
+      <h2>客户端说明：按设备类型各写一段</h2>
+      <p class="section-note">
+        客户端的具体下载地址与版本号请以你实际收到的页面或说明为准，本页不提供下载链接，
+        也不对未核实的兼容范围作承诺。下面只写使用上需要先知道的事。
+      </p>
+      <div class="client-list">
+        <div class="ticket">
+          <div class="stub"><span>桌面端</span><span>Windows / macOS</span></div>
+          <h3>桌面客户端</h3>
+          <p>适合长时间在线的工作场景。安装后按订阅信息填入配置即可，切换节点在客户端内完成，不需要改动系统设置。</p>
+          <p class="meta">下载地址：<a href="#">以开通后页面给出的说明为准</a></p>
+        </div>
+        <div class="ticket">
+          <div class="stub"><span>移动端</span><span>iOS / Android</span></div>
+          <h3>移动客户端</h3>
+          <p>移动端更看重待机与切换速度。建议只保留常用节点列表，避免在弱网环境下反复重连。</p>
+          <p class="meta">下载地址：<a href="#">以开通后页面给出的说明为准</a></p>
+        </div>
+        <div class="ticket">
+          <div class="stub"><span>路由器</span><span>自备设备</span></div>
+          <h3>路由器侧接入</h3>
+          <p>若在路由器上统一配置，设备数按实际联网设备计入同时在线限制。团队版 20 台的额度通常用在这一层。</p>
+          <p class="meta">配置方式：<a href="#">见开通后随附的接入说明</a></p>
+        </div>
+        <div class="ticket">
+          <div class="stub"><span>账号</span><span>多设备登录</span></div>
+          <h3>同一账号的设备管理</h3>
+          <p>同时在线台数按档位限制：基础版 3 台、旗舰版 5 台、团队版 20 台。超出时先下线不用的设备再连。</p>
+          <p class="meta">相关说明：<a href="#faq">见常见问题中的设备主题</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow">
+    <div class="wrap">
+      <h2>接入流程：四步，按顺序做</h2>
+      <p class="section-note">每一步只做一件事，做完再进下一步，出问题时也容易定位在哪一环。</p>
+      <ol class="steps">
+        <li>
+          <h3>选档</h3>
+          <p>按流量、设备数、线路三项确定基础版、旗舰版或团队版，再决定月付或年付。</p>
+        </li>
+        <li>
+          <h3>确认结算周期</h3>
+          <p>月付与年付权益一致，年付按 150 / 350 / 850 元一次性结算，适合长期不换档的情况。</p>
+        </li>
+        <li>
+          <h3>装客户端</h3>
+          <p>按设备类型选桌面端、移动端或路由器侧配置，填入订阅信息后先连一次做验证。</p>
+        </li>
+        <li>
+          <h3>核对用量</h3>
+          <p>连上后看一眼当月流量与在线设备数，确认没有超出所选档位再投入日常使用。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="notes">
+    <div class="wrap">
+      <h2>使用前值得逐条确认的六件事</h2>
+      <p class="section-note">这些是实际使用中最容易出岔子的地方，先看一眼，能省掉一次工单。</p>
+      <ul class="checklist">
+        <li>同时在线设备数按档位上限计算，退出一台才会空出一个位置。</li>
+        <li>流量按自然月刷新，跨月不累计，月底前的余量不会留到下个月。</li>
+        <li>流媒体解锁在基础版为“基础流媒体”，全节点原生解锁属于旗舰版及以上。</li>
+        <li>IPLC 专线游戏加速优化只出现在旗舰版与更高档位，基础版为普通线路节点池。</li>
+        <li>企业定制路由只在团队版提供，需要与专属客户经理对接具体配置。</li>
+        <li>本页不提供下载链接与交易入口，开通与下载请以你实际收到的页面说明为准。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>常见问题：按主题分组</h2>
+      <p class="section-note">问题按主题分三组：套餐与价格、设备与客户端、流量与线路。每组下面的答案直接写在页面上，不需要再点开。</p>
+
+      <div class="faq-group">
+        <h3>一 · 套餐与价格</h3>
+
+        <div class="qa">
+          <h4>年付比月付便宜多少？</h4>
+          <p>基础版月付 15 元、年付 150 元，正好是十个月的价钱；旗舰版月付 35 元、年付 350 元；团队版月付 85 元、年付 850 元。三档都是同一个规则：年付按十个月计。</p>
+        </div>
+
+        <div class="qa">
+          <h4>年付和月付的权益有区别吗？</h4>
+          <p>没有。年付只是把结算周期拉长，同一档位的流量、设备数、节点与支持内容完全一致。差别只在付款方式与总额。</p>
+        </div>
+
+        <div class="qa">
+          <h4>中途想换档怎么办？</h4>
+          <p>换档按当时的档位与结算周期处理。本页不承诺任何折算或差价规则，具体方式请以开通后页面给出的说明为准，不要按本页价格自行推算。</p>
+        </div>
+
+        <div class="qa">
+          <h4>为什么旗舰版被标为推荐？</h4>
+          <p>因为它在三档里是流量与设备数的中间点：300GB 与 5 台设备覆盖大多数多设备场景，同时带有全节点原生流媒体解锁与 IPLC 专线游戏加速优化。这是页面上的选择提示，不是使用效果承诺。</p>
+        </div>
+      </div>
+
+      <div class="faq-group">
+        <h3>二 · 设备与客户端</h3>
+
+        <div class="qa">
+          <h4>同时在线的台数是怎么算的？</h4>
+          <p>按同时处于连接状态的设备数计算：基础版 3 台、旗舰版 5 台、团队版 20 台。手机、平板、笔记本各自算一台；若在路由器上统一配置，接在该路由器下的联网设备按实际数量计入。</p>
+        </div>
+
+        <div class="qa">
+          <h4>超出设备上限会怎样？</h4>
+          <p>通常表现为新设备连不上或旧连接被挤下线。处理办法是先在不用的设备上断开，再连新设备；如果长期不够用，说明当前档位偏低，应往上一档看。</p>
+        </div>
+
+        <div class="qa">
+          <h4>客户端从哪里获得？</h4>
+          <p>本页不提供下载地址，也不提供安装包。请以你开通后收到的页面说明为准，不要从本页以外的来源推断版本或兼容范围。</p>
+        </div>
+
+        <div class="qa">
+          <h4>只在一台电脑上用，需要看客户端那一段吗？</h4>
+          <p>需要看，但只看桌面端那一条即可。桌面端一条写清了填入配置与切换节点的位置，其余部分与单设备使用关系不大。</p>
+        </div>
+      </div>
+
+      <div class="faq-group">
+        <h3>三 · 流量与线路</h3>
+
+        <div class="qa">
+          <h4>流量用超了会怎样？</h4>
+          <p>流量按自然月计算，用尽后当月无法继续按原额度使用。本页不承诺任何超出后的处理方式，请按所选档位的额度规划用量，接近上限时考虑换到更高一档。</p>
+        </div>
+
+        <div class="qa">
+          <h4>“普通线路节点池”和“VIP 专属高带宽节点”差在哪？</h4>
+          <p>按页面写法，基础版使用普通线路节点池；团队版使用 VIP 专属高带宽节点。旗舰版的特征是 IPLC 专线游戏加速优化。本页不对具体带宽数值或节点数量作说明，因为这些参数未在页面上给出。</p>
+        </div>
+
+        <div class="qa">
+          <h4>流媒体解锁三档有什么不同？</h4>
+          <p>基础版为“解锁基础流媒体”，旗舰版与团队版为“全节点原生流媒体解锁”。如果你的主要用途是流媒体，这一项是基础版与旗舰版之间的实质差别。</p>
+        </div>
+
+        <div class="qa">
+          <h4>团队版的企业定制路由需要额外付费吗？</h4>
+          <p>本页只写明团队版“支持企业定制路由”并提供“专属客户经理服务”，没有给出是否另计费用。这部分需与客户经理确认，本页不做价格推断。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <h2>微观云 · 页面说明</h2>
+      <p>本页只做信息陈列：三档套餐的价格与权益、客户端使用方向、四步接入流程与按主题分组的常见问题。页面不提供下载链接与交易入口，也不对未列出的参数作承诺。</p>
+      <p>价格与权益以本页所列内容为准；开通与下载请以你实际收到的页面说明为准。</p>
+      <p class="jump">
+        回到：
+        <a href="#plans">套餐对照</a><span class="sep">/</span><a href="#clients">客户端说明</a><span class="sep">/</span><a href="#flow">接入流程</a><span class="sep">/</span><a href="#faq">常见问题</a>
+      </p>
+    </div>
+  </footer>
+
+</main><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
